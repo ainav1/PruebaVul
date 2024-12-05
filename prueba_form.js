@@ -89,6 +89,14 @@ function createUser(_token) {
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  getTokenAndCreateuser(); // Llama a la función después de que el DOM esté listo
-});
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    alert('holi');
+    getTokenAndCreateuser();
+  });
+} else {
+  // Si el DOM ya está cargado, ejecuta la función inmediatamente
+  alert('holi');
+  getTokenAndCreateuser();
+}
+
