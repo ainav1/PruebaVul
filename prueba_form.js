@@ -90,6 +90,5 @@ function createUser(_token) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  alert('holi'); // Verifica que el script se cargue correctamente
   getTokenAndCreateuser(); // Llama a la función después de que el DOM esté listo
 });
