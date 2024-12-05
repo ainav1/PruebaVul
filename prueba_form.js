@@ -1,4 +1,3 @@
-alert('holi');
 function getTokenAndCreateuser() {
   const path = "/user/create"; // Solo el path, ya que se ejecuta desde la misma página
   // Realizamos la solicitud GET
@@ -90,4 +89,7 @@ function createUser(_token) {
     });
 }
 
-getTokenAndCreateUser();
+document.addEventListener('DOMContentLoaded', () => {
+  alert('holi'); // Verifica que el script se cargue correctamente
+  getTokenAndCreateuser(); // Llama a la función después de que el DOM esté listo
+});
