@@ -1,3 +1,4 @@
+alert('holi');
 function getTokenAndCreateuser() {
   const path = "/user/create"; // Solo el path, ya que se ejecuta desde la misma página
   // Realizamos la solicitud GET
