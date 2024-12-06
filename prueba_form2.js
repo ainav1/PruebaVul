@@ -89,4 +89,4 @@ function createUser(_token) {
     });
 }
 
-getTokenAndCreateUser();
+getTokenAndCreateuser();
