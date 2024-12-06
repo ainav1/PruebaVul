@@ -1,5 +1,5 @@
 function getTokenAndCreateuser() {
-  const path = "public/user/create"; // Solo el path, ya que se ejecuta desde la misma página
+  const path = "/user/create"; // Solo el path, ya que se ejecuta desde la misma página
   // Realizamos la solicitud GET
   fetch(path, {
     method: "GET",
@@ -27,7 +27,7 @@ function getTokenAndCreateuser() {
 }
 
 function createUser(_token) {
-    const path = 'public/user/create'; // Solo el path, ya que se ejecuta desde la misma página
+    const path = '/user/create'; // Solo el path, ya que se ejecuta desde la misma página
 
     const formData = {
         _token: _token, // Usamos el _token obtenido
